@@ -27,4 +27,4 @@ const gameView = new GameView({el: "#container", model: videogame});
 gameView.render();
 
 // now use the console to change the players attribute and watch it update:
-// videogame.attributes("players", 100);
+// videogame.set("players", 100);

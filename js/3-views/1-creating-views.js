@@ -35,7 +35,7 @@ const DynamicView = Backbone.View.extend({
     },
     render(randomNumber) {
         this.$el.html(randomNumber);
-        // pickNewNumber(this); // enable to make the number change every second dynamically
+        // pickNewNumber(this); // uncomment to make the number change every second dynamically
     }
 });
 const dynamicView = new DynamicView(randomNumber);

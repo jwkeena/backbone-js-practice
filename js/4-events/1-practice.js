@@ -27,6 +27,11 @@ const alien = {
 
 _.extend(alien, Backbone.Events);
 
-alien.on("disturbing", e => console.log("Alien is disturbing people.", e)); // subscribe to event
-alien.off("disturbing"); // unsubscribe from event. If event name is not specified, all events will be unsubscribed from this object
-alien.once("abduct", () => console.log("Alien has abducted you and you can't be abducted again. Just try it")); // an event that only triggers once and is removed
+// subscribe to event
+alien.on("disturbing", e => console.log("Alien is disturbing people.", e)); 
+
+// unsubscribe from event. If event name is not specified, all events will be unsubscribed from this object
+// alien.off("disturbing"); 
+
+// an event that only triggers once and is removed
+alien.once("abduct", () => console.log("Alien has abducted you and you can't be abducted again. Just try it")); 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="js/lib/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!-- For all models, collections, views lessons and projects-->
+        <ul id="container">
+        </ul>
+
+        <!-- For events project -->
+        <div id="add-new-car">
+        </div>
+        <hr>
+        <p>Cars in garage</p>
+        <ul id="garage-container">
+        </ul>
+
+        <!-- Necessary library scripts for all projects -->
+        <script src="js/lib/jquery-min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/backbone-min.js"></script>
+
+        <!-- Custom script for view templating -->
+        <script id="songTemplate" type="text/html">
+            <%= title %>
+            <button>Listen</button>
+            <% if (plays > 100) { %>
+                <span class="popular">Popular</span>
+            <% } %>
+        </script>
+
+        <!-- Custom script for view templating -->
+        <script id="vehicleTemplate" type="text/html">
+            <%= registrationNumber %>
+            <button class="delete">Delete</button>
+        </script>
+
+        <!-- Link relevant js script here -->
+        <script src="js/1-models/1-lesson.js"></script>
+    </body>
+</html>
